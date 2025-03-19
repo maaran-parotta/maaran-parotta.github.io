@@ -1,0 +1,28 @@
+Practice 9: Implementation of Random Forest in R 
+
+Aim: To implement a random forest model for classification. 
+
+Procedure: 
+
+    Install and load the randomForest package. 
+    Create and train a random forest model. 
+
+Simple Program: 
+ 
+# Install and load the randomForest package 
+install.packages("randomForest") 
+library(randomForest) 
+
+# Sample data 
+data(iris) 
+
+# Create a Random Forest model 
+model <- randomForest(Species ~ Sepal.Length + Sepal.Width, data = 
+iris) 
+
+# Print the model 
+print(model) 
+
+Input: iris dataset 
+
+Output: Random Forest model summary. 
