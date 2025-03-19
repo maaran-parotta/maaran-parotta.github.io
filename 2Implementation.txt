@@ -1,0 +1,22 @@
+Practice 2: Implementation of R Program – Basic
+
+Aim: To understand basic R syntax and printing output.
+
+Procedure:
+
+    Create simple variables.
+    Print their values using print() or cat().
+
+Simple Program:
+
+ # Basic program to print Hello World
+ message <- "Hello, World!"
+
+ print(message)
+
+
+Input: None
+
+Output:
+
+ [1] "Hello, World!"
