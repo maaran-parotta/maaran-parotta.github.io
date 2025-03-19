@@ -1,1 +1,18 @@
-Install
+Practice 1: Installation of R Program and Import Packages
+
+Aim: To install R and import essential packages in R.
+Procedure:
+    Install R from the official website: https://cran.r-project.org/
+    Install the required package(s) using install.packages() in R.
+    Use library() to load the package.
+Simple Program:
+ 
+ # Install a package (if not installed)
+ install.packages("ggplot2")
+ # Import the package
+ library(ggplot2)
+
+Input: None
+
+Output: No output, but you can check if the library is loaded by using a function like 
+ggplot2::ggplot()
