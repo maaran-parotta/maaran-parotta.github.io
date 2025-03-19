@@ -1,0 +1,25 @@
+Practice 5: Implementation of Control Statements in R 
+
+Aim: To implement basic control structures (if-else). 
+
+Procedure: 
+
+    Use if, else, and else if for decision-making. 
+
+Simple Program: 
+
+# Check if the number is positive or negative 
+num <- -5 
+if (num > 0) { 
+print("Positive") 
+} else if (num < 0) { 
+print("Negative") 
+} else { 
+print("Zero") 
+} 
+
+Input: num = -5 
+
+Output: 
+
+[1] "Negative"
