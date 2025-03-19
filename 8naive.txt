@@ -1,0 +1,28 @@
+Practice 8: Implementation of Naïve Bayes 
+
+Aim: To implement the Naïve Bayes classification algorithm. 
+
+Procedure: 
+
+    Install and load the e1071 package. 
+    Use naiveBayes() to create a model. 
+
+Simple Program: 
+ 
+# Install and load the e1071 package 
+install.packages("e1071") 
+library(e1071) 
+
+# Sample data 
+data(iris) 
+
+# Apply Naive Bayes 
+model <- naiveBayes(Species ~ Sepal.Length + Sepal.Width, data = 
+iris) 
+
+# Print model summary 
+print(model) 
+
+Input: iris dataset 
+
+Output: Naïve Bayes model summary.
