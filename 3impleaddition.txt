@@ -1,0 +1,26 @@
+Practice 3: Implementation of R Program – Basic (Addition) 
+
+Aim: To perform basic arithmetic operations. 
+
+Procedure: 
+
+   1. Define two variables. 
+   2. Add them using the + operator. 
+   3. Print the result. 
+
+Simple Program: 
+ 
+# Adding two numbers 
+num1 <- 5 
+num2 <- 3 
+sum <- num1 + num2 
+print(sum) 
+
+Input: 
+
+num1 = 5 
+num2 = 3 
+
+Output: 
+
+[1] 8 
