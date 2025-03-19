@@ -1,0 +1,31 @@
+Practice 4: Implementation of Data Types in R 
+
+Aim: To understand and implement various data types in R. 
+
+Procedure: 
+
+    Create variables of different types: numeric, character, logical, and complex. 
+    Print the type using typeof(). 
+    
+Simple Program: 
+ 
+# Creating variables of different types 
+num <- 10 
+text <- "Hello" 
+is_true <- TRUE 
+complex_num <- 1 + 2i 
+
+# Print types 
+print(typeof(num))        # Numeric 
+print(typeof(text))       # Character 
+print(typeof(is_true))    # Logical 
+print(typeof(complex_num)) # Complex 
+
+Input: None 
+
+Output: 
+
+[1] "double" 
+[1] "character" 
+[1] "logical" 
+[1] "complex"
