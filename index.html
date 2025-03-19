@@ -1,45 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<title>MARAN PAROTTA KADAI</title>
-
-</head>
-
-<body>
-<center>
-	<div>
-	<p>Parotta Naaley adhu namma maran parotta kada thaan...</p>
-	
-
-<br>
-    <h3>1: Installation of R Program and Import Packages</h3>
-	<button onclick="openFile()">Open File</button>
-
-	<a id="fileLink" href="Installation.txt" style="display: none;" target="_blank"></a>
-
-    <br>
-
-    <h3>1: Installation of R Program and Import Packages</h3>
-	<button onclick="openFile()">Open File</button>
-
-	<a id="fileLink" href="Installation.txt" style="display: none;" target="_blank"></a>
-
-    <br>
-
-	<script>
-        function openFile() {
-            // Get the anchor tag element
-            const fileLink = document.getElementById('fileLink');
-            
-            // Trigger a click event on the anchor to open the file
-            fileLink.click();
+    <title>Maaran Parotta Kadai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    </script>
-
-	
-	</div>
-</center>
-</body>
-
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            color: #fff;
+            background-image: url(''); /* background-image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        /* Container for the entire page */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        /* Header section */
+        header {
+            background-color: #333; /* Gray header */
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 48px;
+            color: yellow;
+            margin: 0;
+            letter-spacing: 1.5px;
+        }
+        header h2 {
+            font-size: 40px;
+            margin: 0;
+            letter-spacing: 1.5px;
+        }
+        /* Grid layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .grid-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .grid-item h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 15px 0;
+        }
+        .grid-item p {
+            font-size: 16px;
+            color: #666;
+        }
+        /* Make the layout responsive */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Footer section 
+        <img src="https://via.placeholder.com/350x200" alt="Item 1"> 
+        <img src="https://via.placeholder.com/350x200" alt="Item 2">
+        <img src="https://via.placeholder.com/350x200" alt="Item 3">
+        <img src="https://via.placeholder.com/350x200" alt="Item 4">
+        <img src="https://via.placeholder.com/350x200" alt="Item 5">
+        <img src="https://via.placeholder.com/350x200" alt="Item 6">
+        */
+        footer {
+            background-color: #333; /* Gray footer */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+    <body>
+    <header>
+        <h1>Maaran Parotta Kadai - மாறன் பரோட்டா கடை </h1> <div> <br> <h2>R Programming</h2>
+    </header>
+    <div class="container">
+        <div class="grid">
+            <div class="grid-item">
+                <h2>Item 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Item 2</h2>
+                <p>Nullam hendrerit volutpat elit, in vestibulum dui.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Item 3</h2>
+                <p>Integer sit amet tortor id arcu vulputate condimentum.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Item 4</h2>
+                <p>Suspendisse potenti. Curabitur euismod risus quis.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Item 5</h2>
+                <p>Aliquam erat volutpat. Donec euismod dui in venenatis.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Item 6</h2>
+                <p>Morbi cursus nunc id augue sodales, eget efficitur felis.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Item 7</h2>
+                <p>Morbi cursus nunc id augue sodales, eget efficitur felis.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Item 8</h2>
+                <p>Morbi cursus nunc id augue sodales, eget efficitur felis.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Item 9</h2>
+                <p>Morbi cursus nunc id augue sodales, eget efficitur felis.</p>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+        </div>
+        <script>
+            function openFile() {
+                // Get the anchor tag element
+                const fileLink = document.getElementById('fileLink');
+                
+                // Trigger a click event on the anchor to open the file
+                fileLink.click();
+            }
+        </script>
+    </div>
+    <footer>
+        <p>&copy; 2025 Maaran Parotta Kadai, Kalugu Malai. All Rights Reserved.</p>
+    </footer>
+    </body>
 </html>
