@@ -1,0 +1,24 @@
+Practice 10: Implementation of K-means in R 
+
+Aim: To implement the K-means clustering algorithm. 
+
+Procedure: 
+
+    Use kmeans() to perform clustering on the data. 
+    Plot the clusters. 
+
+Simple Program: 
+
+# Sample data 
+data(iris) 
+
+# K-means clustering 
+set.seed(10) 
+clusters <- kmeans(iris[, 1:4], centers = 3) 
+
+# Print clustering results 
+print(clusters) 
+
+Input: iris dataset 
+
+Output: K-means clustering results, including cluster centers.
