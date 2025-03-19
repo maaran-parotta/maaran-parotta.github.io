@@ -1,0 +1,28 @@
+Practice 7: Implementation of Decision Tree and KNN in R
+
+Aim: To implement decision trees and KNN algorithms for classification tasks. 
+
+Procedure: 
+
+    Install and load the necessary package rpart for decision tree and class for 
+KNN. 
+    Use sample data for training. 
+
+Simple Program for Decision Tree: 
+ 
+# Load necessary libraries 
+install.packages("rpart") 
+library(rpart) 
+
+# Sample data 
+data(iris) 
+
+# Create a decision tree 
+model <- rpart(Species ~ Sepal.Length + Sepal.Width, data = iris) 
+
+# Print the model 
+print(model) 
+
+Input: iris dataset (comes preloaded in R) 
+
+Output: Decision tree model summary. 
