@@ -175,29 +175,28 @@
     <div class="container">
         <div class="grid">
             
-            <div class="grid-item">
-                <h2>CN</h2>
-                <button onclick="openFile()">Open File</button>
-	            <a id="fileLink" href="CN.pdf" style="display: none;" target="_blank"></a>
-            </div>
-		
-	    <div class="grid-item">
-                <h2>9 & 10</h2>
-                <button onclick="openFile()">Open File</button>
-	            <a id="fileLink" href="9&10.pdf" style="display: none;" target="_blank"></a>
-	    <div>
+<div class="grid-item">
+    <h2>CN</h2>
+    <button onclick="openFile('fileLink1')">Open File</button>
+    <a id="fileLink1" href="CN.pdf" style="display: none;" target="_blank"></a>
+</div>
+
+<div class="grid-item">
+    <h2>9 & 10</h2>
+    <button onclick="openFile('fileLink2')">Open File</button>
+    <a id="fileLink2" href="9&10.pdf" style="display: none;" target="_blank"></a>
+</div>
             
         </div>
     </center>
         <script>
-            function openFile() {
-                // Get the anchor tag element
-                const fileLink = document.getElementById('fileLink');
-                
-                // Trigger a click event on the anchor to open the file
-                fileLink.click();
-            }
-        </script>
+function openFile(linkId) {
+    const fileLink = document.getElementById(linkId);
+    if (fileLink) {
+        fileLink.click();
+    }
+}
+</script>
     </div>
     <footer>
         <p>&copy; All Rights Reserved.</p>
